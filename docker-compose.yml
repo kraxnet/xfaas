@@ -1,5 +1,9 @@
 version: "3.7"
 services:
+  template:
+    build: 
+      context: https://github.com/kubicek/ruby-http.git#:template/ruby-http
+    image: ruby-http:latest
   traefik:
     image: "traefik:v2.4"
     container_name: "traefik"
